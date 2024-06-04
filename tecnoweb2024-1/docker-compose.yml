@@ -1,14 +1,14 @@
 version : "3.7"
 services :
-  proyectos-monolitica :
-    container_name : proyectos-monolitica
-    image : proyectos-monolitica:v1
+  proyectos-monolito :
+    container_name : proyectos-monolito
+    image : proyectos-monolito:v1
     build :
-      context: .
-    ports : 
+      context : .
+    ports :
       - "4001:4001"
-    networks :
+    networks : 
       - proyectos-app
-
 networks :
   proyectos-app :
+
